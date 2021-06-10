@@ -1,11 +1,51 @@
-<header>
-
-  <h1>
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  </h1>
-
+<header class="header">
   <nav>
-    {% include navigation.html navigation=site.data.navigation %}
+    <ul>
+      <li class="logo">
+        <div class="wrap">
+          <a href="/">
+            <img src="../images/christopher-castleberry-foundation-logo.svg" alt="">
+          </a>
+        </div>
+      </li>
+      <li><a href="/about">About</a></li>
+      <li><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
+      <li><a href="/board-members">Board Members</a></li>
+      <li><a class="btn" href="" target="_blank">Donate</a></li>
+    </ul>
   </nav>
-
 </header>
+
+
+<script>
+  var globalStickyHeaderClass = "has-sticky-header";
+  var headerClass = "header";
+  var stickyModifier = "--sticky";
+
+  var body = document.querySelector("body");
+  var header = document.querySelector("." + headerClass);
+
+  function stickHeader() {
+    body.classList.add(globalStickyHeaderClass);
+    header.classList.add(headerClass + stickyModifier);
+  }
+
+  function unstickHeader() {
+    body.classList.remove(globalStickyHeaderClass);
+    header.classList.remove(headerClass + stickyModifier);
+  }
+
+  function handleStickyHeader() {
+    var st = window.pageYOffset || document.documentElement.scrollTo;
+    if (st > 1) {
+      stickHeader();
+    } else {
+      unstickHeader();
+    }
+  }
+
+  if (header) {
+    window.addEventListener("scroll", handleStickyHeader);
+    handleStickyHeader();
+  }
+</script>
