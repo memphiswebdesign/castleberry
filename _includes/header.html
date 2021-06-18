@@ -8,44 +8,51 @@
           </a>
         </div>
       </li>
-      <li><a href="/about">About</a></li>
-      <li><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
-      <li><a href="/board-members">Board Members</a></li>
-      <li><a class="btn" href="" target="_blank">Donate</a></li>
+      <li class="dl"><a href="/about">About</a></li>
+      <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
+      <li class="dl"><a href="/board-members">Board Members</a></li>
+      <li class="dl"><a class="btn" href="https://www.planmygolfevent.com/cgi/page.cgi?_id=367517" target="_blank">Donate</a></li>
+      <li class="mobile-toggle">
+        <a id="mobile-toggle" href="#">
+          <svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z"/></svg>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
 
+<div id="mobile-drawer">
+   <ul class="large-links">
+     <li class="dl"><a href="/about">About</a></li>
+      <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
+      <li class="dl"><a href="/board-members">Board Members</a></li>
+      <li class="dl"><a class="btn" href="https://www.planmygolfevent.com/cgi/page.cgi?_id=367517" target="_blank">Donate</a></li>
+   </ul>
+   <hr>
+   <ul>
+     <li>
+        <a href="https://www.facebook.com/castleberryclassic" target="_blank">Like us on Facebook</a>
+      </li>
+      <li><a href="mailto:castleberryclassic@gmail.com">Email Us</a></li>
+      <li><a href="tel:8702101378">Call Us</a></li>
+   </ul>
+</div>
+
 
 <script>
-  var globalStickyHeaderClass = "has-sticky-header";
-  var headerClass = "header";
-  var stickyModifier = "--sticky";
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
-  var body = document.querySelector("body");
-  var header = document.querySelector("." + headerClass);
-
-  function stickHeader() {
-    body.classList.add(globalStickyHeaderClass);
-    header.classList.add(headerClass + stickyModifier);
-  }
-
-  function unstickHeader() {
-    body.classList.remove(globalStickyHeaderClass);
-    header.classList.remove(headerClass + stickyModifier);
-  }
-
-  function handleStickyHeader() {
-    var st = window.pageYOffset || document.documentElement.scrollTo;
-    if (st > 1) {
-      stickHeader();
+    if (scroll >= 200) {
+        $(".header").addClass("scroll");
     } else {
-      unstickHeader();
+        $(".header").removeClass("scroll");
     }
-  }
+}); 
 
-  if (header) {
-    window.addEventListener("scroll", handleStickyHeader);
-    handleStickyHeader();
-  }
+$("#mobile-toggle").click(function() {
+  event.preventDefault();
+  $("#mobile-drawer").toggleClass("open");
+  $("body").toggleClass("lock");
+});
 </script>

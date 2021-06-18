@@ -14,6 +14,8 @@ body {
     [full-start] minmax(1rem, 1fr)
     [main-start] minmax(0, 52rem) [main-end]
     minmax(1rem, 1fr) [full-end];
+
+  &.lock {overflow: hidden;}
 }
 
 // by default, make any new children of body to span the full track
@@ -25,7 +27,7 @@ body > * {
 // it is also a grid for the logo and nav
 header {
   display: block;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -34,6 +36,12 @@ header {
   text-align: center;
   border-bottom: 1px solid #eee;
   z-index: 100;
+
+  @media (min-width: 768px) {
+    position: fixed;
+  }
+
+  &.scroll { }
 
   .container {padding: 0;}
 }
@@ -46,6 +54,10 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 767px) {
+      justify-content: space-between;
+      padding: 0 15px;
+    }
 
     li {
       margin-right: 2rem;
@@ -60,25 +72,38 @@ header nav {
         font-weight: 600;
         color: #444;
         text-decoration: none;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.08em;
         border: 0;
+        border-radius: 6px;
+        transition: 0.2s ease-out;
+
         @media screen and (min-width: $screen-sm) {
-          padding: 1rem;
+          padding: 0.9rem 1rem;
         }
         &[data-current="current page"] {
           // you can add an active nav item style here
         }
       }
       a:hover {
+        background-color: #eee;
       }
 
       &.logo {
         max-height: 70px;
+        @media (max-width: 767px) {width: 106px;}
         .wrap {
           background-color: #fff;
           padding: 10px;
+          @media (max-width: 767px) {padding: 6px;}
         }
         a {padding: 0;}
+      }
+      &.mobile-toggle {
+        display: none;
+        @media (max-width: 767px) {display: inline-block;}
+      }
+      @media (max-width: 767px) {
+        &.dl {display: none;}
       }
     }
   }
@@ -92,8 +117,8 @@ main {
   margin-left: auto;
   grid-column: main;
   display: grid;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   @media screen and (min-width: $screen-md) {
     align-content: start;
   }
@@ -173,5 +198,41 @@ footer {
   background-color: $grey;
   > small {
     grid-column: main;
+  }
+}
+
+#mobile-drawer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  max-width: 375px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #eee;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+  transition: 0.2s ease-out;
+  transform: translateX(101%);
+
+  &.open {
+    transform: translateX(0%);
+    box-shadow: -12px 12px 55px rgba(32,32,32,0.1);
+  }
+}
+
+ul.large-links {
+  li {margin: 0 0 1rem 0;}
+  a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  hr {
+    display: block;
+    margin: 30px;
   }
 }

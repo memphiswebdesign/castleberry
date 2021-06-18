@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Three Oaks Design & co.
-email: kira@threeoaksdesign.co
+title: Christopher Castleberry Foundation
+email: castleberryclassic@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Home renovation designer in the greater Memphis area. We serve commercial and residential owners/investors. We create beautiful and functional spaces for clients.
+  The Castleberry Classic was formed more than ten years ago to honor a deceased friend, fraternity brother, and schoolmate, Christopher Castleberry.
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://threeoaksdesign.co/" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://castleberryfoundation.com/" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
