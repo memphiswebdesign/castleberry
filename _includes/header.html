@@ -27,6 +27,34 @@
   </nav>
 </header>
 
+<div id="mobile-drawer">
+  <div class="close"><a id="close-drawer" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><defs/><defs><style>.cls-1{fill:#fff;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1.5 1.5l30 30M1.5 31.5l30-30"/></g></g></svg>
+  </a></div>
+  <div class="flex-apart">
+     <ul class="large-links">
+       <li class="dl"><a href="/about">About</a></li>
+        <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
+        <li class="dl"><a href="/board-members">Board Members</a></li>
+        <li class="dl">
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="LSA5VTD7Q6VAW" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img style="display:none" alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </li>
+     </ul>
+     <ul class="border-top">
+        <li><a href="/documents">501(c)(3)</a></li>
+     </ul>
+    <div class="bubbles border-top">
+      <span><a href="https://www.facebook.com/castleberryclassic" target="_blank"> <i class="icon-facebook"></i></a></span>
+      <span><a href="mailto:castleberryclassic@gmail.com"> <i class="icon-mail"></i></a></span>
+      <span><a href="tel:8702101378"> <i class="icon-phone"></i></a></span>
+    </div>
+  </div>
+</div>
+
 
 <script>
   $(window).scroll(function() {    
@@ -44,7 +72,6 @@ $("#mobile-toggle").click(function() {
   $("#mobile-drawer").toggleClass("open");
   $("body").toggleClass("lock");
 });
-
 $("#close-drawer").click(function() {
   event.preventDefault();
   $("#mobile-drawer").removeClass("open");
