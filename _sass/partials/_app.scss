@@ -15,13 +15,22 @@ body {
     [main-start] minmax(0, 52rem) [main-end]
     minmax(1rem, 1fr) [full-end];
 
-  &.lock {overflow: hidden;}
+  &.lock {
+    overflow: hidden;
+
+
+    .site-wrap {
+      opacity: 0.5;
+    }
+  }
 }
 
 // by default, make any new children of body to span the full track
 body > * {
   grid-column: full;
 }
+
+.site-wrap {transition: 0.2s ease-out;}
 
 // header, the first grid row
 // it is also a grid for the logo and nav
@@ -62,9 +71,10 @@ header nav {
     li {
       margin-right: 2rem;
       display: inline-block;
-      @media screen and (min-width: $screen-sm) {
-        margin-right: 0;
-      }
+      @media screen and (min-width: $screen-sm) {margin-right: 0;}
+
+      form {padding-top: 6px;}
+
       a,
       a:visited {
         text-transform: uppercase;
@@ -203,12 +213,13 @@ footer {
     a {
       padding: 2em;
       font-size: 15px;
-      color: #333;
+      color: #333!important;
+      font-weight: 600;
     }
 
     svg {
       display: inline-block;
-      width: 45px;
+      width: 52px;
     }
   }
   p {
@@ -227,7 +238,7 @@ footer {
   text-align: center;
   border: 1px solid #eee;
   position: fixed;
-  top: 70px;
+  top: 0;
   right: 0;
   background: #fff;
   z-index: 999;
@@ -238,6 +249,41 @@ footer {
     transform: translateX(0%);
     box-shadow: -12px 12px 55px rgba(32,32,32,0.1);
   }
+
+  .bubbles {
+    margin-top: auto;
+  }
+
+  .close {
+    text-align: right;
+    padding-right: 10px;
+
+    a {display: inline-block;}
+
+    svg {
+      display: inline-block;
+      width: 22px;
+    }
+  }
+
+  .border-top {
+    border-top: 1px solid $brand-grey;
+    padding: 2em 0;
+  }
+
+  .flex-apart {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    li {
+      a {
+        color: #333;
+      }
+    }
+  }
+
 }
 
 ul.large-links {

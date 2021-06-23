@@ -12,8 +12,8 @@
       <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
       <li class="dl"><a href="/board-members">Board Members</a></li>
       <li class="dl">
-        <form action="https://www.paypal.com/donate" method="post" target="_blank">
-          <input type="hidden" name="hosted_button_id" value="VQZ348N8A6YAL" />
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="hosted_button_id" value="LSA5VTD7Q6VAW" />
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
           <img style="display:none" alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
@@ -26,29 +26,6 @@
     </ul>
   </nav>
 </header>
-
-<div id="mobile-drawer">
-   <ul class="large-links">
-     <li class="dl"><a href="/about">About</a></li>
-      <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
-      <li class="dl"><a href="/board-members">Board Members</a></li>
-      <li class="dl">
-        <form action="https://www.paypal.com/donate" method="post" target="_blank">
-          <input type="hidden" name="hosted_button_id" value="VQZ348N8A6YAL" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-          <img style="display:none" alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-      </li>
-   </ul>
-   <hr>
-   <ul>
-     <li>
-        <a href="https://www.facebook.com/castleberryclassic" target="_blank">Like us on Facebook</a>
-      </li>
-      <li><a href="mailto:castleberryclassic@gmail.com">Email Us</a></li>
-      <li><a href="tel:8702101378">Call Us</a></li>
-   </ul>
-</div>
 
 
 <script>
@@ -66,5 +43,11 @@ $("#mobile-toggle").click(function() {
   event.preventDefault();
   $("#mobile-drawer").toggleClass("open");
   $("body").toggleClass("lock");
+});
+
+$("#close-drawer").click(function() {
+  event.preventDefault();
+  $("#mobile-drawer").removeClass("open");
+  $("body").removeClass("lock");
 });
 </script>
