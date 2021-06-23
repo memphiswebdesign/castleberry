@@ -57,7 +57,7 @@ header {
 
 // main menu, is a grid item
 header nav {
-  @media screen and (min-width: $screen-sm) { }
+  @media screen and (min-width: $screen-sm) {}
   ul {
     // flexbox is better than grid for distributing an unknown qty of children
     display: flex;
@@ -201,7 +201,6 @@ html[data-current="contact"] main > form {
 footer {
   background-color: $brand-grey;
   text-align: center;
-  @media (min-width: $screen-sm) {}
 
   ul {
     display: flex;
@@ -209,6 +208,17 @@ footer {
     align-items: center;
     justify-content: space-around;
     margin: 0 0 1em 0;
+    flex-direction: column; 
+
+    li {
+      padding: .35em;
+
+      &.icon {
+        @media (max-width: $screen-md) {order: -1;}
+      }
+    }
+
+    @media (min-width: $screen-md) {flex-direction: row;}
 
     a {
       padding: 2em;
