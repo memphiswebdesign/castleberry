@@ -189,15 +189,31 @@ html[data-current="contact"] main > form {
 }
 
 footer {
-  grid-column: full;
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(1rem, 1fr)
-    [main-start] minmax(0, 50rem) [main-end]
-    minmax(1rem, 1fr) [full-end];
-  background-color: $grey;
-  > small {
-    grid-column: main;
+  background-color: $brand-grey;
+  text-align: center;
+  @media (min-width: $screen-sm) {}
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 1em 0;
+
+    a {
+      padding: 2em;
+      font-size: 15px;
+      color: #333;
+    }
+
+    svg {
+      display: inline-block;
+      width: 45px;
+    }
+  }
+  p {
+    font-size: 13px;
+    margin: 0;
   }
 }
 
@@ -225,9 +241,9 @@ footer {
 }
 
 ul.large-links {
-  li {margin: 0 0 1rem 0;}
+  li {margin: 0 0 1.5rem 0;}
   a {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
   }

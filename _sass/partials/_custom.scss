@@ -11,7 +11,7 @@
 	margin-top: 0;
 	margin-bottom: 2rem;
 	min-height: 40vh;
-	height: 40vh;
+	height: 50vh;
 	text-align: center;
 
 	@media (min-width: $screen-xs) {height: 50vh;}
@@ -40,7 +40,7 @@
 		}
 	}
 	.slick-slide {
-		height: 40vh;
+		height: 50vh;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -67,6 +67,7 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 0.02em;
+			margin-top: 1em;
 			text-shadow: 3px 3px 18px rgba(32,32,32,0.5);
 		}
 
@@ -117,6 +118,12 @@
 					transform: scale(1.1);
 				}
 			}
+		}
+
+		.donate {
+			text-align: center;
+			margin: 1em 0 0 0;
+			input {border: none;}
 		}
 	}
 }
@@ -207,4 +214,9 @@ footer {
 	padding: 4rem 2em;
 	min-height: 20vh;
 	text-align: center;
+}
+
+// display utility
+.d-mobile {
+	@media (min-width: $screen-sm) {display: none;}
 }
