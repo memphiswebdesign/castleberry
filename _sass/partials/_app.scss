@@ -44,7 +44,7 @@ header {
   border-bottom: 1px solid #eee;
   z-index: 100;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     position: fixed;
   }
 
@@ -98,11 +98,14 @@ header nav {
 
       &.logo {
         max-height: 70px;
-        @media (max-width: 767px) {width: 106px;}
+        @media (max-width: $screen-lg) {width: 120px;}
+        @media (max-width: $screen-md) {width: 105px;}
+        @media (max-width: $screen-sm) {width: 95px;}
+        @media (max-width: $screen-xs) {width: 90px;}
         .wrap {
           background-color: #fff;
           padding: 10px;
-          @media (max-width: 767px) {padding: 6px;}
+          @media (max-width: $screen-lg) {padding: 5px;}
         }
         a {padding: 0;}
       }
@@ -127,9 +130,12 @@ main {
   display: grid;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  @media screen and (min-width: $screen-md) {
-    align-content: start;
-  }
+  // @media screen and (min-width: $screen-md) {align-content: start;}
+  @media (max-width: $screen-lg) {padding-top: 13rem;}
+  @media (max-width: $screen-md) {padding-top: 11rem;}
+  @media (max-width: $screen-sm) {padding-top: 6rem;}
+  @media (max-width: $screen-xs) {}
+  @media (max-width: $screen-xs) {padding-left: 10px; padding-right: 10px;}
 }
 
 // reset breaking fallbacks (e.g. widths) if CSS Grid is supported
@@ -286,6 +292,8 @@ footer {
 
   ul {
     li {
+      margin: 0 0 1em 0;
+
       a {
         color: #333;
       }
@@ -295,9 +303,8 @@ footer {
 }
 
 ul.large-links {
-  li {margin: 0 0 1.5rem 0;}
   a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
   }
