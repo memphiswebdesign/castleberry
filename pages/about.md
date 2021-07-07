@@ -9,6 +9,8 @@ intro_paragraph: |
 ---
 The Castleberry Classic was formed more than ten years ago to honor a deceased friend, fraternity brother, and schoolmate, Christopher Castleberry.
 
+<img src="../images/christopher-castleberry-collage.jpg" alt="Markdown Monster icon" style="" />
+
 Christopher was a bright young man, a college graduate who served his country with honor in the reserves for four years, but sadly, like many others, he tragically lost his life due to substance abuse.
 As anyone who has lost someone at too young an age knows, the loss rippled through family, fraternity brothers, school alumni, and friends.  Upon heartfelt reflection, a small group of former classmates decided to honor Christopher's memory, and in doing so to help create additional awareness for something so many Americans struggle with, often in private.
 

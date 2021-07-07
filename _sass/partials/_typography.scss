@@ -127,3 +127,33 @@ header > h1 {
     text-align: left;
   }
 }
+
+.text-button {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 0.5em 0;
+  &:after {
+    content: '→';
+    display: inline-block;
+    margin: 0 0 0 4px;
+  }
+  &:before {
+    content: '';
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 2px;
+    background-color: $brand-blue;
+    transition: 0.2s ease-out;
+  }
+  &:hover {
+    color: darken($brand-blue, 10%);
+    &:before {width: 100%;}
+  }
+}

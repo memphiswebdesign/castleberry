@@ -219,3 +219,73 @@ footer {
 .d-mobile {
 	@media (min-width: $screen-sm) {display: none;}
 }
+
+.memory-section {
+	padding: 2.25em 0;
+	position: relative;
+	background-color: #f7f4f4;
+	margin: 1em 0 2em 0;
+
+	.flex-center {
+		display: flex;
+		align-items: center;
+		position: relative;
+		@media (max-width: $screen-sm) {flex-direction: column;}
+	}
+
+	.memory {
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 10;
+			background-image: linear-gradient(to right, rgba(#f7f4f4, 0.3) , rgba(#f7f4f4, 0.97));
+
+			@media (max-width: $screen-sm) {
+				background-image: linear-gradient(to bottom, rgba(#f7f4f4, 0.3) , rgba(#f7f4f4, 0.97));
+			}
+		}
+	}
+	.story {
+		padding: 0 10%;
+
+		@media (max-width: $screen-sm) {
+			margin: 2em 0 0 0;
+			padding: 0 3%;
+		}
+
+		p {
+			&:before {
+				content: '';
+				display: block;
+				height: 3px;
+				width: 75px;
+				background: $brand-blue;
+				margin: 0 0 1.3em 0;
+			}
+		}
+	}
+}
+
+.memory.slick-slider,
+.memory .slick-slide {
+	width: 400px;
+    height: 400px;
+
+    @media (max-width: $screen-xs) {
+    	height: 320px;
+    	width: 100%;
+    	max-width: 400px;
+    }
+}
+.memory .slick-slide {
+	background-size: cover;
+	background-position: center;
+}
+
+
+
