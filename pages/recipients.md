@@ -18,8 +18,8 @@ intro_paragraph: |
 2017 Alina Rudakova $500 HSU (in school)<br />
 2018 Chloe Chapman $500 UCA (did not graduate)<br />
 2019 Dylan Wasson $1500 UCA (in school)<br />
-2020 Jake Turner $1000 NPC (in school)<br />
-###### Total so far: $8500
+2020 Jake Turner $1000 NPC (in school)
+<h6 style="padding-top: 0; margin-top: -10px;">Total so far: $8500</h6>
 
 
 ### Henderson School of Business 
@@ -30,8 +30,9 @@ intro_paragraph: |
 2019 - Erika Emmons $2500<br />
 2020 - Wade Tubbs $2000<br />
 2020 - Leonia Partian $2000<br />
-2021-Monica Tedford $2,000<br />
+2021 - Monica Tedford $2000<br />
+2022 - Luke Patterson $1500<br />
+2022 - Robert Thornton $2000
+<h6 style="padding-top: 0; margin-top: -10px;">Total so far: $16,750</h6>
 
-###### Total $13,250 so far
-
-### Grand Total $21,750
+<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $25,250</h3>

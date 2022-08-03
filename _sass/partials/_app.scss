@@ -98,6 +98,7 @@ header nav {
 
       &.logo {
         max-height: 70px;
+        width: 120px;
         @media (max-width: $screen-lg) {width: 120px;}
         @media (max-width: $screen-md) {width: 105px;}
         @media (max-width: $screen-sm) {width: 95px;}
