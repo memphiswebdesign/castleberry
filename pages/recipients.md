@@ -19,8 +19,9 @@ intro_paragraph: |
 2018 Chloe Chapman $500 UCA (did not graduate)<br />
 2019 Dylan Wasson $1500 UCA (in school)<br />
 2020 Jake Turner $1000 NPC (in school)<br />
-2022 Todd Greenlove $1000 (unknown)
-<h6 style="padding-top: 0; margin-top: -10px;">Total so far: $9500</h6>
+2022 Todd Greenlove $1000 (unknown)<br />
+2023 Nick Brey - (graduated) Westminster College in Missouri $1000
+<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $10,500</h5>
 
 
 ### Henderson School of Business 
@@ -33,7 +34,8 @@ intro_paragraph: |
 2020 - Leonia Partian $2000<br />
 2021 - Monica Tedford $2000<br />
 2022 - Luke Patterson $1500<br />
-2022 - Robert Thornton $2000
-<h6 style="padding-top: 0; margin-top: -10px;">Total so far: $16,750</h6>
+2022 - Robert Thornton $2000<br />
+2023 - Cayden Davis $2000
+<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $18,750</h5>
 
-<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $26,250</h3>
+<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $29,250</h3>
