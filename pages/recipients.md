@@ -35,7 +35,9 @@ intro_paragraph: |
 2021 - Monica Tedford $2000<br />
 2022 - Luke Patterson $1500<br />
 2022 - Robert Thornton $2000<br />
-2023 - Cayden Davis $2000
-<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $18,750</h5>
+2023 - Cayden Davis $2000<br />
+2024 - Sarah Singletary $2,000
 
-<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $29,250</h3>
+<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $20,750</h5>
+
+<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $31,250</h3>
