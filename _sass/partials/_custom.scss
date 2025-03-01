@@ -235,7 +235,7 @@ footer {
 	}
 
 	.memory {
-		&:before {
+		/*&:before {
 			content: '';
 			display: block;
 			position: absolute;
@@ -249,7 +249,7 @@ footer {
 			@media (max-width: $screen-sm) {
 				background-image: none;
 			}
-		}
+		}*/
 	}
 	.story {
 		padding: 0 10%;
