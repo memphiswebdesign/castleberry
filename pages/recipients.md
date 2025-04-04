@@ -38,8 +38,12 @@ intro_paragraph: |
 2022 - Robert Thornton $2000<br />
 2023 - Cayden Davis $2000<br />
 2024 - Sarah Singletary $5,000<br />
-2025 - Layton Bass $2,000
+2025 - <a href="/recipients/layton-bass">Layton Bass</a> $2,000
 
 <h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $25,750</h5>
 
 <h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $37,250</h3>
+
+<style>
+  main a {text-decoration: underline;}
+</style>
