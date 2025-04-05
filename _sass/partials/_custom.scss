@@ -95,8 +95,8 @@
 				overflow: hidden;
 				transition: 0.15s ease-out;
 				margin: 0 0.08em;
-				background-color: rgba(#E05F5F, 0.8);
-				border: #E05F5F;
+				background-color: rgba(76, 112, 191, 0.85);
+				border: rgb(76, 112, 191);
 
 				@media (min-width: $screen-xs) {
 					margin: 0 0.12em;
@@ -115,7 +115,7 @@
 				}
 
 				&:hover {
-					background-color: #E05F5F;
+					background-color: rgb(76, 112, 191);
 					transform: scale(1.1);
 				}
 			}
