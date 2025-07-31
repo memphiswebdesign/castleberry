@@ -40,7 +40,7 @@ intro_paragraph: |
 2023 - Cayden Davis $2000<br />
 2025 - <a href="/recipients/sarah-singletary">Sarah Singletary</a> $5,000<br />
 2025 - <a href="/recipients/layton-bass">Layton Bass</a> $4,000<br />
-2025 - Ricky Calhoun</a> $5,000
+2025 - <a href="/recipients/ricky-calhoun">Ricky Calhoun</a> $5,000
 
 <h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $32,750</h5>
 
