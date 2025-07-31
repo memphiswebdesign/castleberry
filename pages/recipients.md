@@ -22,8 +22,8 @@ intro_paragraph: |
 2022 Todd Greenlove $1000 (unknown)<br />
 2023 Nick Brey - (graduated) Westminster College in Missouri $1000<br />
 2024 Lainey Mungle $1000<br />
-2025 Tyler Beaudreaux $1000
-<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $12,500</h5>
+2025 Tyler Beaudreaux $2000
+<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $13,500</h5>
 
 
 ### Henderson School of Business 
@@ -39,11 +39,12 @@ intro_paragraph: |
 2022 - Robert Thornton $2000<br />
 2023 - Cayden Davis $2000<br />
 2025 - <a href="/recipients/sarah-singletary">Sarah Singletary</a> $5,000<br />
-2025 - <a href="/recipients/layton-bass">Layton Bass</a> $2,000
+2025 - <a href="/recipients/layton-bass">Layton Bass</a> $4,000<br />
+2025 - Ricky Calhoun</a> $5,000
 
-<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $25,750</h5>
+<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $32,750</h5>
 
-<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total 38,250</h3>
+<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total 46,250</h3>
 
 <style>
   main a {text-decoration: underline; font-weight: bold;}
