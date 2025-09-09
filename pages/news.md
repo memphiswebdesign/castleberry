@@ -12,8 +12,8 @@ intro_paragraph: |
 <h5>Stay in the Loop! 🎉 Get the Latest Events & Updates First!</h5>
 <div class="container" style="padding:0;">
   <div class="tabs">
-    <div class="tab active" data-target="news-email">Email alerts</div>
-    <div class="tab" data-target="news-sms">Text alerts</div>
+    <div class="tab active" data-target="news-email">Email updates</div>
+    <div class="tab" data-target="news-sms">Text updates</div>
   </div> 
   <div id="news-email" class="tab-content active">
     {% include brevo-email.html %}
@@ -31,11 +31,11 @@ intro_paragraph: |
     }
     .tab {
       flex: 1;
-      font-size: 18px;
+      font-size: 16px;
       padding: 10px 20px;
       cursor: pointer;
       border-bottom: 2px solid #555;
-      font-weight: 600; 
+      font-weight: 600;
       text-align: center;
     }
     .tab.active {
