@@ -1,3 +1,8 @@
+<section id="hello">
+  <a class="hello_link" href="https://birdease.com/castleberryclassic" target="_blank"></a>
+  <span>EVENT</span>
+  <p>2026 Castleberry Race Day | April 25th &mdash; Register Now →</p>
+</section>
 <header class="header">
   <nav>
     <ul>
@@ -9,7 +14,7 @@
         </div>
       </li>
       <li class="dl"><a href="/about">About</a></li>
-      <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
+      <li class="dl"><a href="https://birdease.com/castleberryclassic" target="_blank">Events</a></li>
       <li class="dl"><a href="/recipients">Recipients</a></li>
       <li class="dl"><a href="/news">News</a></li>
       <li class="dl">
@@ -35,7 +40,7 @@
   <div class="flex-apart">
      <ul class="large-links">
        <li class="dl"><a href="/about">About</a></li>
-        <li class="dl"><a href="http://castleberryclassic.com/" target="_blank">Events</a></li>
+        <li class="dl"><a href="https://birdease.com/castleberryclassic" target="_blank">Events</a></li>
         <li class="dl"><a href="/recipients">Recipients</a></li>
         <li class="dl"><a href="/news">News</a></li>
      </ul>
@@ -80,4 +85,11 @@ $("#close-drawer").click(function() {
   $("#mobile-drawer").removeClass("open");
   $("body").removeClass("lock");
 });
+
+const setHeaderTop = () =>
+  document.querySelector('header.header').style.top =
+  document.querySelector('#hello').offsetHeight + 'px';
+  window.addEventListener('load', setHeaderTop);
+  window.addEventListener('resize', setHeaderTop);
+
 </script>

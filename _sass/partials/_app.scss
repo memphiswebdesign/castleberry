@@ -30,8 +30,58 @@ body > * {
 
 .site-wrap {transition: 0.2s ease-out;}
 
-// header, the first grid row
-// it is also a grid for the logo and nav
+section#hello {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(76, 112, 191);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 8px;
+
+  a.hello_link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+  span {
+    display: inline-block;
+    background-color: #fff;
+    color: rgb(76, 112, 191);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 2px;
+    margin: 0;
+    padding: 1px 6px;
+    letter-spacing: 0.02em;
+  }
+  p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.35em;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 12px 8px;
+  }
+
+  &:hover {background: #111;}
+}
+
 header {
   display: block;
   position: relative;
@@ -135,7 +185,7 @@ main {
   // @media screen and (min-width: $screen-md) {align-content: start;}
   @media (max-width: $screen-lg) {padding-top: 13rem;}
   @media (max-width: $screen-md) {padding-top: 11rem;}
-  @media (max-width: $screen-sm) {padding-top: 6rem;}
+  @media (max-width: $screen-sm) {padding-top: 9rem;}
   @media (max-width: $screen-xs) {}
   @media (max-width: $screen-xs) {padding-left: 10px; padding-right: 10px;}
 }
