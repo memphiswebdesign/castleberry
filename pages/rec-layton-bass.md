@@ -32,7 +32,7 @@ intro_paragraph: |
   <p>Thank you,<br>
   <strong>Layton Bass</strong><br>
   Class Of 2027<br>
-  Bachelor of Business Administration- Management</p>
+  Bachelor of Business Administration - Management</p>
 </div>
 
 <style>

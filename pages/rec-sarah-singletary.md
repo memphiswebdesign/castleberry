@@ -28,7 +28,7 @@ in the field of business. Again, thank you from the bottom of my heart for your 
 support. Your investment in my education is truly life-changing, and I am forever grateful.</p>
   <p>With sincere appreciation,<br>
   <strong>Sarah Singletary</strong><br>
-  Bachelor of Business Administration- Management</p>
+  Bachelor of Business Administration - Management</p>
 </div>
 
 <style>
