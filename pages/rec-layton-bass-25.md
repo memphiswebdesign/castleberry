@@ -3,7 +3,7 @@ layout: page
 title: Recipients story | Layton Bass
 meta_description: |
   Christopher Cstleberry Fondation Recipients Story - Layton Bass
-permalink: /recipients/layton-bass
+permalink: /recipients/layton-bass-2025
 section: recipients
 intro_paragraph: |
   

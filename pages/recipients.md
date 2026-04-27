@@ -39,14 +39,15 @@ intro_paragraph: |
 2022 - Robert Thornton $2000<br />
 2023 - Cayden Davis $2000<br />
 2025 - <a href="/recipients/sarah-singletary">Sarah Singletary</a> $5,000<br />
-2025 - <a href="/recipients/layton-bass">Layton Bass</a> $4,000<br />
+2025 - <a href="/recipients/layton-bass-2025">Layton Bass</a> $4,000<br />
 2025 - <a href="/recipients/ricky-calhoun">Ricky Calhoun</a> $5,000<br />
 2026 - <a href="/recipients/abigail-pence">Abigail Pence</a> $2,000<br />
-2026 - <a href="/recipients/micah-gibson">Micah Gibson</a> $2,000
+2026 - <a href="/recipients/micah-gibson">Micah Gibson</a> $2,000<br />
+2026 - <a href="/recipients/layton-bass-2026">Layton Bass</a> $2,000
 
-<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $36,750</h5>
+<h5 style="font-weight: bold; padding-top: 0; margin-top: -10px;">Total so far: $38,750</h5>
 
-<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total 50,250</h3>
+<h3 style="font-weight: bold; color: #4c70bf;">&mdash; Grand Total $52,250</h3>
 
 <style>
   main a {text-decoration: underline; font-weight: bold;}
